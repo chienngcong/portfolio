@@ -53,7 +53,7 @@ resolution of critical bugs with Dev and BA teams.
 
 ### 📊 Dự án cá nhân
 Phân tích cách yếu tố ảnh hưởng đến lưu lượng giao thông tại liên lộ tiểu bang I 94
-[Project 1: I 94 Interstate traffic jam](./Traffic jam in I-94.pdf)
+[Project 1: I 94 Interstate traffic jam](./Traffic_jam_in_I_94.pdf)
 
 ### Contact
 
