@@ -1,64 +1,63 @@
 # 👋 Chào mừng đến với Portfolio của Nguyễn Công Chiến
 
-## 🧑‍💼 Giới thiệu bản thân
+### Giới thiệu bản thân
 
 Tôi là một Data Analyst với nền tảng vững chắc về phân tích dữ liệu và kinh nghiệm thực tiễn tại các công ty fintech hàng đầu như TPBank và VNPAY. Tôi đam mê khai thác dữ liệu để đưa ra các quyết định kinh doanh dựa trên phân tích, và không ngừng học hỏi để phát triển kỹ năng về BI, dự báo, và chiến lược dữ liệu.
 
----
+### Career Objective
 
-## 🎯 Mục tiêu nghề nghiệp
+I aim to develop expertise in data collection, analysis, and visualization to support data-driven decision-making in business operations. With proficiency in SQL, Power BI, and Excel, I seek to extract meaningful insights, identify trends, and provide strategic recommendations that enhance business performance. My goal is to continuously improve my analytical and problem-solving skills, collaborate with cross-functional teams, and contribute to forecasting and business intelligence initiatives. In the long run, I aspire to take on more advanced roles in data analytics and drive impactful data strategies. 
 
-Tôi hướng đến việc phát triển chuyên môn trong thu thập, phân tích và trực quan hóa dữ liệu nhằm hỗ trợ quá trình ra quyết định trong vận hành kinh doanh. Tôi mong muốn đóng góp các chiến lược dữ liệu có tác động thực tiễn và đảm nhiệm vai trò cao hơn trong lĩnh vực phân tích dữ liệu trong tương lai.
+### Education
 
----
+- International Business | National Economics University (_Aug 2020 - Dec 2024_)
+- Electronics and Telecommunications Talent Program | Hanoi University of Science and Technology (_Aug 2019 - Jun 2020_)
 
-## 🛠️ Kỹ năng
+### Skills & Interests
 
-- **Kỹ thuật**: SQL • Power BI • Excel • Jira • Python (cơ bản) • Canva
-- **Phân tích & Trực quan**: Khai thác dữ liệu, xây dashboard, tìm insight từ dữ liệu người dùng
-- **Ngôn ngữ**: Tiếng Việt (bản ngữ) • Tiếng Anh (IELTS 6.0 – Reading 7.0)
-- **Kỹ năng mềm**: Tư duy phân tích • Làm việc nhóm • Giải quyết vấn đề
+- **Technical**: SQL, Power BI, Python (basic), Excel, Jira, Canva, Word, PowerPoint 
+- **Languages**: Vietnamese (Native), English (IELTS 6.0 – Reading 7.0, Writing 6.0) 
+- **Soft Skills**: Analytical thinking, Communication, Teamwork, Problem-solving 
+- **Interests**: Fintech innovation, Finance, Sports, Arts & Crafts, Reading 
 
----
-
-## 💼 Kinh nghiệm nổi bật
+### Experience
 
 ### 📱 TPBank – Product Owner Collaborator
-**11/2024 – Nay**
-- Tham gia phát triển ứng dụng SalesApp được sử dụng bởi 1,000+ nhân viên
-- Đề xuất & kiểm thử tính năng LeadID, calculator LC, giúp giảm 20% thời gian xử lý
-- Phân tích dữ liệu người dùng để xác định bottleneck & tăng mức độ sử dụng app
+**11/2024 – present**
+- Participated in developing SalesApp, a sales support tool used by over 1,000 internal sales staff. 
+- Proposed and tested features such as LeadID and fee calculator for LC guarantees, contributing to a 20% reduction 
+in sales process time and a 10% increase in app usage. 
+- Wrote and executed up to 60 manual test cases/day for biometric data collection features; reported and coordinated 
+resolution of critical bugs with Dev and BA teams. 
+- Analyzed user data to identify bottlenecks, designed communication campaigns via Canva to increase engagement. 
+- Used Jira, Excel, and Power BI for task tracking, data analysis, and reporting. 
 
-### 🏦 VNPAY – Nhân viên Vận hành
+### VNPAY – Operations Staff 
 **10/2023 – 10/2024**
-- Hỗ trợ onboarding thương nhân, xử lý 20–30 bộ hồ sơ/ngày
-- Theo dõi KPI nội bộ, hỗ trợ kỹ thuật qua Zalo/email
+- Processed 20–30 SmartPOS registration sets/day and supported merchant onboarding. 
+- Verified merchant data, coordinated with the Sales team, and maintained daily KPI tracking. 
+- Assisted in troubleshooting issues related to SPOS, QR, and CTT products via Zalo and email. 
+- Managed POSM materials and internal publication closures. 
+### Lotte Finance Vietnam - Telesales Representative
+**06/2023 - 09/2023**
+● Consulted over 30 customers/day on credit card and personal loan offerings. 
+● Negotiated credit limits and repayment terms, followed up post-sale to ensure compliance. 
 
----
-
-## 📜 Chứng chỉ
-
+### Certificate
 - Google Data Analytics Professional Certificate – *Google*
 - Google AI Essentials – *Google*
 - Simple Linear Regression – *Coursera*
+- How to use Roadmap in Jira - *Coursera*
 - MOS Excel – *Microsoft*
 - IELTS 6.0 – *British Council*
 
----
+### 📊 Dự án cá nhân
 
-## 📊 Dự án cá nhân
+Chờ bổ sung
 
-### 🔹 [Sales Data Dashboard](https://github.com/your-username/sales-dashboard)
-Xây dựng dashboard Power BI trực quan hóa dữ liệu bán hàng, phân tích xu hướng & hiệu suất theo khu vực.
-
-### 🔹 [SQL Analysis on Retail Dataset](https://github.com/your-username/sql-retail-analysis)
-Phân tích hành vi mua hàng qua câu truy vấn SQL trên cơ sở dữ liệu bán lẻ (MySQL).
-
----
-
-## 📫 Liên hệ
+### Contact
 
 - Email: [Chien.ngcong@gmail.com](mailto:Chien.ngcong@gmail.com)
-- SĐT: 0911 256 596
-- Địa chỉ: 79 Cầu Giấy, Hà Nội
-- LinkedIn: *Đang cập nhật*
+- Phone: 0911 256 596
+- Address: 79  Cau Giay Street, Ha Noi
+- LinkedIn: https://www.linkedin.com/in/c%C3%B4ng-chi%E1%BA%BFn-nguy%E1%BB%85n-94b680232/
