@@ -60,4 +60,4 @@ Chờ bổ sung
 - Email: [Chien.ngcong@gmail.com](mailto:Chien.ngcong@gmail.com)
 - Phone: 0911 256 596
 - Address: 79  Cau Giay Street, Ha Noi
-- LinkedIn: https://www.linkedin.com/in/c%C3%B4ng-chi%E1%BA%BFn-nguy%E1%BB%85n-94b680232/
+- LinkedIn: [ChienNguyenCong](https://www.linkedin.com/in/c%C3%B4ng-chi%E1%BA%BFn-nguy%E1%BB%85n-94b680232/)
