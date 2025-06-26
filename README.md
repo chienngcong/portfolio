@@ -52,8 +52,8 @@ resolution of critical bugs with Dev and BA teams.
 - IELTS 6.0 – *British Council*
 
 ### 📊 Dự án cá nhân
-
-Chờ bổ sung
+Phân tích cách yếu tố ảnh hưởng đến lưu lượng giao thông tại liên lộ tiểu bang I 94
+[Project 1: I 94 Interstate traffic jam](./Traffic jam in I-94.pdf)
 
 ### Contact
 
