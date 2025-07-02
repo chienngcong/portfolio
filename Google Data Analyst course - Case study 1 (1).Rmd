@@ -1,0 +1,294 @@
+---
+title: "Case study: Cyclistic How to tranform the casual riders to manual riders"
+output: html_notebook
+editor_options:
+  markdown: 
+    wrap: sentence
+---
+
+## Part 1: Ask
+
+1.  Business task statement As a junior data analyst at Cyclistic, my task is to analyze how annual members and casual riders use Cyclistic bikes differently.
+    The goal is to uncover behavioral patterns and trends in ride length, frequency, day-of-week usage, and other relevant variables.
+    These insights will support the marketing team in designing targeted strategies to convert more casual riders into annual members and thus increase long-term revenue for the company.
+
+2.  My stakeholders:
+
+-   Lily Moreno - Director of Marketing – needs insights to guide the new marketing campaign
+-   Marketing Analytics Team - Will use your analysis to measure performance and impact of the campaign
+-   Cyclistic Executive Team - Final decision-makers who must approve any proposed strategy
+
+3.  The business context There are over 5800 bikes have been shared and over 692 docking stations.
+    The users are devided two type: Annual members and casual riders (single/day-pass users).
+    Depening on their purposes, but the large scale in their users uses bike for their daily traveling to work.
+    There are 4 types of bike: Standard bikes, e-bikes, hand tricycles, cargo bikes (8% use assistive options)
+
+4.  The business questions
+
+-   "How do annual members and casual riders use Cyclistic bikes differently?"
+-   Why would casual riders choose to become members?
+-   How can digital media be used to influence their decision?
+
+## Part 2: Prepare and process dataset
+
+1.  Loading dataset The dataset is located in "Cloud/project/dataset" on the Positcloud website. Let's see what the data is organized:
+
+```{r setting packages}
+install.packages('tidyverse')
+library(tidyverse)
+install.packages('readr') #when install tidyverse was failed, cannot install completely readr
+library(readr)
+
+# inport data
+divvy_2019_q1 <- read_csv('dataset/Divvy_2019_Q1.csv')
+divvy_2020_q1 <- read_csv('dataset/Divvy_2020_Q1.csv')
+```
+
+2.  Exploring the dataset The dataset is ROCCC:
+
+-   Reliable: cannot judge because it is hypothetical data
+-   Original: yes.
+-   Comprehensive: yes
+-   Current: yes, the dataset was setting for the questions in the 2020 context.
+-   Cited: yes. Because these are the datasets was provided in my Course, so I don't have any problems with the authority or privacy. And I also recheck them. The data have any error or how about the dataset's integrity?
+
+```{r}
+install.packages('skimr')
+library(skimr)
+divvy_2019_q1 %>% 
+skim_without_charts()
+```
+
+Dataset of quater 1 in 2019: 12 columns and 365069 rows =\> the gender has 19711 missing values and birthyear has 18023 missing value.
+So, I decide to assign "Unknown" for the missing value.
+
+```{r}
+divvy_2019_q1$gender <- ifelse(is.na(divvy_2019_q1$gender), "Unknown", divvy_2019_q1$gender)
+divvy_2019_q1$birthyear <- ifelse(is.na(divvy_2019_q1$birthyear), "Unknown", divvy_2019_q1$birthyear)
+```
+
+```{r}
+table(divvy_2019_q1$usertype)
+prop.table(table(divvy_2019_q1$usertype))
+
+```
+
+ALmost the data in divvy_2019_q1 is about subcriber, if what I think is true, this dataset is almost about the manual user and just have small part user have not yet subcribed membership (6.34%).
+So, in the some sides, the rate tranformation users (new user to subriber) is high.
+
+```{r}
+table(divvy_2019_q1$gender)
+prop.table(table(divvy_2019_q1$gender))
+```
+
+What wrong with female, their husband or boyfriend ride the bike?
+Or they prefer other type vehicles?
+
+```{r}
+divvy_2020_q1 %>% 
+  skim_without_charts()
+```
+
+Divvy_2020_q1: in end_station_name, end_station_id, end_lat, end_lng columns, each of them has one missing value.
+I assign "Unknown" for missing value.
+
+```{r}
+divvy_2020_q1$end_station_name <- ifelse(is.na(divvy_2020_q1$end_station_name), "Unknown", divvy_2020_q1$end_station_name)
+divvy_2020_q1$end_station_id <- ifelse(is.na(divvy_2020_q1$end_station_id), "Unknown", divvy_2020_q1$end_station_id)
+divvy_2020_q1$end_lat <- ifelse(is.na(divvy_2020_q1$end_lat), "Unknown", divvy_2020_q1$end_lat)
+divvy_2020_q1$end_lng <- ifelse(is.na(divvy_2020_q1$end_lng), "Unknown", divvy_2020_q1$end_lng)
+```
+
+The rate of member type and gender
+
+```{r}
+table(divvy_2020_q1$member_casual)
+prop.table(table(divvy_2020_q1$member_casual))
+```
+
+I have a hypothety that the firm change the way deviding customer: casual == customer, subcriber == member.
+
+```{r}
+table(divvy_2019_q1$gender)
+prop.table(table(divvy_2019_q1$gender))
+```
+
+3.  Creating new columns
+
+-   What time for each trip: ride_length: the duration of each ride in minutes
+
+```{r}
+library(dplyr)
+divvy_2019_q1 <- divvy_2019_q1 %>%
+  mutate(ride_length = as.numeric(difftime(end_time, start_time, units = "mins")))
+divvy_2020_q1 <- divvy_2020_q1 %>%
+  mutate(ride_length = as.numeric(difftime(ended_at, started_at, units = "mins")))
+
+
+```
+
+Remove if the ride length \<= 0:
+
+```{r}
+divvy_2019_q1 <- divvy_2019_q1 %>% 
+  filter(ride_length > 0)
+divvy_2020_q1 <- divvy_2020_q1 %>% 
+  filter(ride_length >0)
+```
+
+What day on the week the trip was started?:
+day_of_week: the weekday when the ride started
+
+```{r}
+divvy_2019_q1 <- divvy_2019_q1 %>% 
+  mutate(day_of_week = weekdays(as.Date(start_time)))
+divvy_2020_q1 <- divvy_2020_q1 %>% 
+  mutate(day_of_week = weekdays(as.Date(started_at)))
+```
+
+4.  Analyzing dataset
+
+-   Calculating the statistic of each member type. **divvy_2019_q1**
+
+```{r}
+divvy_2019_q1 %>% 
+  group_by(usertype) %>% 
+  summarise(
+    mean_ride = mean(ride_length, na.rm = T),
+    median_ride = median(ride_length, na.rm = T),
+    max_ride = max(ride_length, na.rm =T),
+    min_ride = min(ride_length, na.rm = T)
+  )
+```
+
+**divvy_2020_q1**
+
+```{r}
+divvy_2020_q1 %>% 
+  group_by(member_casual) %>% 
+  summarise(
+    mean_ride = mean(ride_length, na.rm = T),
+    median_ride = median(ride_length, na.rm = T),
+    max_ride = max(ride_length, na.rm =T),
+    min_ride = min(ride_length, na.rm = T)
+  )
+```
+
+We can see that in the both periods (q1 2019, 2020), the casual users often have longer distances than member users.
+
+###Calculating the number of trips for each weekday.
+**divvy_2019_q1**
+
+```{r}
+trip_2019 <- divvy_2019_q1 %>% 
+  group_by(day_of_week, usertype) %>% 
+  summarise(num_trip_of_weekday = n(),
+            mean_time_trip = mean(ride_length, na.rm = T)) %>% 
+  arrange(day_of_week, usertype)
+trip_2019
+```
+
+**divvy_2020_q1**
+
+```{r}
+trip_2020 <- divvy_2020_q1 %>% 
+  group_by(day_of_week, member_casual) %>% 
+  summarise(num_trip_of_weekday = n(),
+            mean_time_trip = mean(ride_length, na.rm = T)) %>% 
+  arrange(day_of_week, member_casual)
+trip_2020
+```
+
+The number of member user'trips focus on weekday, around 5000 to 6000 units, an the number of casual user's trips skyrocket on the weekend =\> these are evidences for the hythority: member users are almost worker and they use vehicle for daily traveling, the purpose of casual users is for entertainment.
+the time in each trip in both dataset provide me that the member user usualy take the short trip, casual travel long time.
+
+## Part 4: Share - Creating Viz
+
+Viz show the relationships between weekdays and the number of trips in 2019
+
+```{r}
+library(ggplot2)
+ggplot(trip_2019, aes(x = day_of_week, y = num_trip_of_weekday, fill = usertype)) +
+  geom_col() + 
+  labs(title = "The number of weekday 2019")
+```
+
+The Viz show the relationship between weekdays and the trip time
+
+```{r}
+library(ggplot2)
+ggplot(trip_2019, aes(x = day_of_week, y = mean_time_trip, fill = usertype)) +
+  geom_col() + 
+  labs(title = "The trip time of weekday 2019")
+```
+
+We can see that the trips during the week are all by the subscriber group, they are the majority, only on weekends do they use a lot, and there is a sudden increase compared to weekdays.
+In terms of usage time, customers are clearly higher than subscribers.
+
+### The relationship between weekdays and others in 2020
+
+-   Weekdays vs number of trip
+
+```{r}
+library(ggplot2)
+ggplot(trip_2020, aes(x = day_of_week, y = num_trip_of_weekday, fill = member_casual)) +
+  geom_col() + 
+  labs(title = "The number of weekday 2020")
+```
+
+-   Weekdays vs trip time
+
+```{r}
+library(ggplot2)
+ggplot(trip_2020, aes(x = day_of_week, y = mean_time_trip, fill = member_casual)) +
+  geom_col() + 
+  labs(title = "The trip time of weekday 2020")
+```
+
+*Similar to 2019, in 2020 the data still tells the same story, the number of uses of the member group is mainly during the week, and on weekends there is a clear increase from casual people.* In terms of distance traveled, casual people travel longer, longer than members (move quickly, at a time).
+=\> the casual group tends to relax and entertain.
+The member group tends to go to work, move quickly.
+
+### The starting time
+
+Creating the new column dimentrating the starting time in each day of user.
+
+```{r}
+library(lubridate)
+divvy_2019_q1 <- divvy_2019_q1 %>%
+  mutate(start_hour = hour(start_time))
+divvy_2020_q1 <- divvy_2020_q1 %>% 
+  mutate(start_hour = hour(started_at))
+```
+
+What the relationship of the start time in day with type of user?
+\* 2019:
+
+```{r}
+ggplot(divvy_2019_q1, aes( x = start_hour, fill = usertype)) +
+  geom_bar()
+```
+
+-   2020:
+
+```{r}
+ggplot(divvy_2020_q1, aes( x = start_hour, fill = member_casual)) +
+  geom_bar()
+```
+
+In the both graph, the same trends that casual (customer -2019) use the firm service in the 10-16h.
+The member (subcriber - 2019) user service in the time to going work almost
+
+## Conclusion
+
+1.  Launch Targeted Weekend Membership Promotions Insight: Casual riders mostly ride on weekends and have longer ride durations, indicating leisure-oriented behavior.
+    Action: Develop a “Weekend Explorer Membership” — a low-cost, short-term plan (e.g., valid only on Saturdays and Sundays) promoted via mobile notifications and email after a casual ride on a weekend.
+    This taps directly into their behavior and encourages habitual use.
+
+2.  Trigger Smart Notifications After Ride Thresholds Insight: Casual riders already interact with the system multiple times before considering membership.
+    Action: Implement automated in-app messages or emails after the 2nd or 3rd casual ride, highlighting the cost savings and benefits of becoming a member.
+    Include a comparison: “You’ve already spent \$X this week — a membership could’ve saved you Y%.”
+
+3.  Create Personalized Onboarding for Casual Riders Insight: Casual users are diverse — some explore the city, others exercise.
+    Action: After a casual rider’s first trip, ask one quick question via app or email: “What do you use our bikes for?”
+    Based on the response (e.g., leisure, fitness, commuting), deliver custom benefits messaging tied to their habits — e.g., fitness perks, commuter pass incentives, or scenic route tips — all while nudging toward membership.
