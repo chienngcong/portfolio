@@ -52,8 +52,11 @@ resolution of critical bugs with Dev and BA teams.
 - IELTS 6.0 – *British Council*
 
 ### 📊 Dự án cá nhân
-Phân tích cách yếu tố ảnh hưởng đến lưu lượng giao thông tại liên lộ tiểu bang I 94
-[Project 1: I 94 Interstate traffic jam](./Traffic_jam_in_I_94.pdf)
+1. Traffic Volume Analysis on I-94 Interstate – Key Insights. [Project 1: I 94 Interstate traffic jam](https://www.kaggle.com/code/chienngcong/heavy-traffic-indicators-on-i-94)
+In this project, I analyzed traffic patterns on the I-94 Interstate to identify factors contributing to heavy traffic. The analysis revealed that traffic volume is typically higher during warmer months (March–October), on business days compared to weekends, and during peak hours around 7 AM and 4 PM. Certain weather conditions such as shower snow, light rain and snow, and proximity thunderstorms with drizzle were also associated with increased traffic congestion.
+
+2. Analysis of EUR/USD Trends Through Three U.S. Presidential Terms. [Project 2: Change of rate EUR/USD](https://www.kaggle.com/code/chienngcong/analysis-of-eur-usd-trends-through-three-u-s-pres)
+In this project, I analyzed the 30-day moving average (Mean(30)) of the EUR/USD exchange rate across three U.S. presidential terms (Bush, Obama, Trump) to identify long-term currency trends. The analysis showed a sharp euro appreciation during the Bush era, a strong dollar recovery under Obama, and relative stability during Trump’s term. This project highlights how macroeconomic and political cycles influence currency strength over time.
 
 ### Contact
 
