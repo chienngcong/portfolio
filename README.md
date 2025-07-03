@@ -1,8 +1,8 @@
-# 👋 Chào mừng đến với Portfolio của Nguyễn Công Chiến
+# 👋 Welcome to the Portfolio of Chien Nguyen Cong
 
-### Giới thiệu bản thân
+### About me
 
-Tôi là một Data Analyst với nền tảng vững chắc về phân tích dữ liệu và kinh nghiệm thực tiễn tại các công ty fintech hàng đầu như TPBank và VNPAY. Tôi đam mê khai thác dữ liệu để đưa ra các quyết định kinh doanh dựa trên phân tích, và không ngừng học hỏi để phát triển kỹ năng về BI, dự báo, và chiến lược dữ liệu.
+I’m a data enthusiast with a strong interest in finance and technology. With hands-on experience in digital product development and data analysis, I enjoy turning raw data into meaningful insights that support strategic decision-making. I'm particularly passionate about exploring how data-driven approaches can optimize financial products and improve user experience in the tech and fintech landscape.
 
 ### Career Objective
 
@@ -51,11 +51,13 @@ resolution of critical bugs with Dev and BA teams.
 - MOS Excel – *Microsoft*
 - IELTS 6.0 – *British Council*
 
-### 📊 Dự án cá nhân
+### 📊 Project
 1. Traffic Volume Analysis on I-94 Interstate – Key Insights. [Project 1: I 94 Interstate traffic jam](https://www.kaggle.com/code/chienngcong/heavy-traffic-indicators-on-i-94)
+
 In this project, I analyzed traffic patterns on the I-94 Interstate to identify factors contributing to heavy traffic. The analysis revealed that traffic volume is typically higher during warmer months (March–October), on business days compared to weekends, and during peak hours around 7 AM and 4 PM. Certain weather conditions such as shower snow, light rain and snow, and proximity thunderstorms with drizzle were also associated with increased traffic congestion.
 
 2. Analysis of EUR/USD Trends Through Three U.S. Presidential Terms. [Project 2: Change of rate EUR/USD](https://www.kaggle.com/code/chienngcong/analysis-of-eur-usd-trends-through-three-u-s-pres)
+
 In this project, I analyzed the 30-day moving average (Mean(30)) of the EUR/USD exchange rate across three U.S. presidential terms (Bush, Obama, Trump) to identify long-term currency trends. The analysis showed a sharp euro appreciation during the Bush era, a strong dollar recovery under Obama, and relative stability during Trump’s term. This project highlights how macroeconomic and political cycles influence currency strength over time.
 
 ### Contact
