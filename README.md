@@ -60,6 +60,13 @@ In this project, I analyzed traffic patterns on the I-94 Interstate to identify 
 
 In this project, I analyzed the 30-day moving average (Mean(30)) of the EUR/USD exchange rate across three U.S. presidential terms (Bush, Obama, Trump) to identify long-term currency trends. The analysis showed a sharp euro appreciation during the Bush era, a strong dollar recovery under Obama, and relative stability during Trump’s term. This project highlights how macroeconomic and political cycles influence currency strength over time.
 
+3.  Cyclistic How to tranform the casual riders to manual riders . [Project 3: Cyclistic - case study in GDAPC](https://www.kaggle.com/code/chienngcong/cyclistic-gdapc)
+
+As part of the Google Data Analytics Capstone, I analyzed user behavior for Cyclistic, a bike-share company in Chicago with over 5,800 bikes and 692 docking stations. The main objective was to investigate the behavioral differences between annual members and casual riders using historical trip data. By processing and visualizing usage patterns—including ride duration, start/end times, bike types, and rider types—I generated actionable insights for the marketing team.
+
+The goal was to support a data-driven strategy to convert more casual riders into annual members, increasing long-term revenue. I cleaned and explored data using R (tidyverse, dplyr, ggplot2), identified key trends, and helped shape marketing recommendations based on ride behavior. The analysis was presented to Cyclistic’s marketing director and key stakeholders to guide future promotional campaigns.
+
+
 ### Contact
 
 - Email: [Chien.ngcong@gmail.com](mailto:Chien.ngcong@gmail.com)
