@@ -45,6 +45,7 @@ resolution of critical bugs with Dev and BA teams.
 
 ### Certificate
 - Google Data Analytics Professional Certificate – *Google*
+- Google Businesst Intelligence Professional Certificate – *Google*
 - Google AI Essentials – *Google*
 - Simple Linear Regression – *Coursera*
 - How to use Roadmap in Jira - *Coursera*
