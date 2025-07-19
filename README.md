@@ -24,20 +24,18 @@ I aim to develop expertise in data collection, analysis, and visualization to su
 
 ### 📱 TPBank – Product Owner Collaborator
 **11/2024 – present**
-- Participated in developing SalesApp, a sales support tool used by over 1,000 internal sales staff. 
-- Proposed and tested features such as LeadID and fee calculator for LC guarantees, contributing to a 20% reduction 
-in sales process time and a 10% increase in app usage. 
-- Wrote and executed up to 60 manual test cases/day for biometric data collection features; reported and coordinated 
-resolution of critical bugs with Dev and BA teams. 
-- Analyzed user data to identify bottlenecks, designed communication campaigns via Canva to increase engagement. 
-- Used Jira, Excel, and Power BI for task tracking, data analysis, and reporting. 
-
+- Analyzed user engagement data from SalesApp to detect bottlenecks and drop-off points; delivered insights to Product team for feature optimization.
+- Executed data cleaning and validation using Excel and SQL, built daily performance dashboards in Power BI to track KPIs of >1,000 sales agents.
+- Wrote and executed 60+ manual test cases/day related to biometric input modules; reported data issues and collaborated with developers and testers to resolve bugs.
+- Participated in defining feature logic (e.g., LeadID generation, LC fee calculator); supported BA team in documenting data fields and edge cases.
+- Proposed visual communication materials (via Canva) to increase adoption of underused features based on usage trends.
+- Tools: SQL, Power BI, Excel, Jira, Canva
 ### VNPAY – Operations Staff 
 **10/2023 – 10/2024**
-- Processed 20–30 SmartPOS registration sets/day and supported merchant onboarding. 
-- Verified merchant data, coordinated with the Sales team, and maintained daily KPI tracking. 
-- Assisted in troubleshooting issues related to SPOS, QR, and CTT products via Zalo and email. 
-- Managed POSM materials and internal publication closures. 
+- Managed and cleaned merchant registration data (~20–30 records/day), ensuring accuracy for onboarding pipeline and reporting consistency.
+- Maintained daily KPI tracking sheet for SmartPOS registration performance across sales regions, using advanced Excel functions (PivotTable, Lookup, Conditional Formatting).
+- Collaborated with Business team to identify patterns in failed onboardings; proposed improvements to form structure and internal process.
+- Supported data extraction and reconciliation tasks related to POSM inventory and publication closures.
 ### Lotte Finance Vietnam - Telesales Representative
 **06/2023 - 09/2023**
 ● Consulted over 30 customers/day on credit card and personal loan offerings. 
