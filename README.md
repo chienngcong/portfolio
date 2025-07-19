@@ -67,7 +67,24 @@ As part of the Google Data Analytics Capstone, I analyzed user behavior for Cycl
 
 The goal was to support a data-driven strategy to convert more casual riders into annual members, increasing long-term revenue. I cleaned and explored data using R (tidyverse, dplyr, ggplot2), identified key trends, and helped shape marketing recommendations based on ride behavior. The analysis was presented to Cyclistic’s marketing director and key stakeholders to guide future promotional campaigns.
 
+4. Cyclistic User Behavior Dashboard
+Tools: BigQuery, SQL, Tableau, Excel | Project Type: BI & ETL Capstone
 
+As part of the Google Business Intelligence Capstone Project, I developed a full BI solution for Cyclistic, a New York-based bike-sharing company. The goal was to analyze user behavior across over 5 million trips to support data-driven station expansion planning.
+
+I designed and executed the ETL process: writing SQL to extract and transform data in BigQuery, then visualized key insights in Tableau through dynamic dashboards. The project included defining stakeholder requirements, mapping user needs, documenting KPIs, and producing executive-ready visuals with filtering by location, season, and user type.
+
+This project demonstrates my capability in stakeholder-focused BI development, structured analytics documentation, and data storytelling using cloud-based tools.
+
+Final Dashboard  
+🔗 [View Tableau Dashboard](https://public.tableau.com/app/profile/chien.nguyen.cong/viz/Cyclisticsplanningexpandingstations/Story1?publish=yes)
+
+Documentation  
+- [Strategy Document](https://docs.google.com/document/d/1fFuBsd7o890MSx8QkXWE8oQ1NIlU-CEX/edit?usp=drive_link&ouid=104482294531751273125&rtpof=true&sd=true)
+- [Stakeholder Requirements](https://docs.google.com/document/d/1xjLOPSe_XZrpZCrbBei5lCvJiVOXEjGX/edit?usp=drive_link&ouid=104482294531751273125&rtpof=true&sd=true)
+- [Project Requirements](https://docs.google.com/document/d/1ZQyFkmaTBc82RMSpJ134hjcDti0d77pV/edit?usp=drive_link&ouid=104482294531751273125&rtpof=true&sd=true)
+
+[Sample SQL on BigQuery](https://docs.google.com/document/d/1x98qU6YTy7R9Bq_NzyBNl1fQ9WEvUI1eaczWt22EGDM/edit?tab=t.0)
 ### Contact
 
 - Email: [Chien.ngcong@gmail.com](mailto:Chien.ngcong@gmail.com)
