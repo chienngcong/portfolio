@@ -22,8 +22,15 @@ I aim to develop expertise in data collection, analysis, and visualization to su
 
 ### Experience
 
-### 📱 TPBank – Product Owner Collaborator
-**11/2024 – present**
+### Techcombank (TCB) - Financial Reporter (Outsourced via HRI)
+**08/2025 – present**
+- Supported IFRS 9 reporting transformation through UAT of EIR, Fair Value, EAD, and ECL calculation engines.
+- Reviewed, validated, and reconciled key IFRS 9 reports (GCV Movement, EAD, ECL), ensuring data accuracy and compliance.
+- Cross-checked Power BI dashboards against system outputs to ensure data integrity and logical consistency.
+- Developed Power BI dashboards tracking GCV, VAS outstanding balance, and ECL movements by product, model_id, and bizline, using advanced DAX (CALCULATE, SWITCH, filter context) to deliver complex analytical reports.
+
+### TPBank – Product Owner Collaborator
+**11/2024 – 07/2025**
 - Analyzed user engagement data from SalesApp to detect bottlenecks and drop-off points; delivered insights to Product team for feature optimization.
 - Executed data cleaning and validation using Excel and SQL, built daily performance dashboards in Power BI to track KPIs of >1,000 sales agents.
 - Wrote and executed 60+ manual test cases/day related to biometric input modules; reported data issues and collaborated with developers and testers to resolve bugs.
@@ -42,6 +49,7 @@ I aim to develop expertise in data collection, analysis, and visualization to su
 ● Negotiated credit limits and repayment terms, followed up post-sale to ensure compliance. 
 
 ### Certificate
+- Google Data Analytics Professional Certificate Advanced – *Google*
 - Google Data Analytics Professional Certificate – *Google*
 - Google Businesst Intelligence Professional Certificate – *Google*
 - Google AI Essentials – *Google*
