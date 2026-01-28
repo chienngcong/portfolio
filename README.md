@@ -2,11 +2,11 @@
 
 ### About me
 
-I’m a data enthusiast with a strong interest in finance and technology. With hands-on experience in digital product development and data analysis, I enjoy turning raw data into meaningful insights that support strategic decision-making. I'm particularly passionate about exploring how data-driven approaches can optimize financial products and improve user experience in the tech and fintech landscape.
+I have hands-on experience working with data in banking and digital transformation environments, covering data analysis, reporting, and system validation. My background spans digital product development, financial reporting, and data-driven performance monitoring, where I focus on ensuring data accuracy and turning complex datasets into actionable insights. I aim to further develop my career in the financial services and banking sector, particularly in roles related to data analytics, financial reporting, and technology-enabled risk and control.
 
 ### Career Objective
 
-I aim to develop expertise in data collection, analysis, and visualization to support data-driven decision-making in business operations. With proficiency in SQL, Power BI, and Excel, I seek to extract meaningful insights, identify trends, and provide strategic recommendations that enhance business performance. My goal is to continuously improve my analytical and problem-solving skills, collaborate with cross-functional teams, and contribute to forecasting and business intelligence initiatives. In the long run, I aspire to take on more advanced roles in data analytics and drive impactful data strategies. 
+Data-driven professional with hands-on experience in banking data analysis, IFRS 9 reporting, and Power BI dashboard development. Strong background in data validation, reconciliation, UAT testing, and analytical reporting across digital banking and financial reporting environments. Seeking to develop further in IT Audit, Data Audit, or Model/Data Risk roles, leveraging SQL, Power BI (DAX), and financial domain knowledge to strengthen data integrity, risk control, and decision-making processes.
 
 ### Education
 
@@ -15,7 +15,7 @@ I aim to develop expertise in data collection, analysis, and visualization to su
 
 ### Skills & Interests
 
-- **Technical**: SQL, Power BI, Python (basic), Excel, Jira, Canva, Word, PowerPoint 
+- **Technical**: SQL(advanced), Power BI (DAX), Python (pandas, NumPy, matplotlib, seaborn, sklearn - data analysis), Excel (Advanced), Jira, Canva, PowerPoint 
 - **Languages**: Vietnamese (Native), English (IELTS 6.0 – Reading 7.0, Writing 6.0) 
 - **Soft Skills**: Analytical thinking, Communication, Teamwork, Problem-solving 
 - **Interests**: Fintech innovation, Finance, Sports, Arts & Crafts, Reading 
