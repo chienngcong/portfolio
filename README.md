@@ -59,28 +59,28 @@ Data-driven professional with hands-on experience in banking data analysis, IFRS
 - IELTS 6.0 – *British Council*
 
 ### 📊 Project
-1. [Project 1: Salifort Motors](https://www.kaggle.com/code/chienngcong/course-7-salifort-motors-project-lab)
+1, [Project 1: Salifort Motors](https://www.kaggle.com/code/chienngcong/course-7-salifort-motors-project-lab)
 This project is part of the Google Advanced Data Analytics Professional Certificate. It focuses on analyzing employee survey data from Salifort Motors to understand the drivers of employee turnover and to predict attrition.
 
 The project applies an end-to-end analytics workflow, including data cleaning, exploratory data analysis (EDA), feature engineering, and the development of a classification model (regression or tree-based). Model performance is evaluated using standard metrics, and insights are translated into practical recommendations for improving employee retention.
 
 This project demonstrates the ability to apply data analytics and machine learning techniques to solve a real-world business problem.
 
-2. Traffic Volume Analysis on I-94 Interstate – Key Insights. [Project 2: I 94 Interstate traffic jam](https://www.kaggle.com/code/chienngcong/heavy-traffic-indicators-on-i-94)
+2, Traffic Volume Analysis on I-94 Interstate – Key Insights. [Project 2: I 94 Interstate traffic jam](https://www.kaggle.com/code/chienngcong/heavy-traffic-indicators-on-i-94)
 
 In this project, I analyzed traffic patterns on the I-94 Interstate to identify factors contributing to heavy traffic. The analysis revealed that traffic volume is typically higher during warmer months (March–October), on business days compared to weekends, and during peak hours around 7 AM and 4 PM. Certain weather conditions such as shower snow, light rain and snow, and proximity thunderstorms with drizzle were also associated with increased traffic congestion.
 
-3. Analysis of EUR/USD Trends Through Three U.S. Presidential Terms. [Project 3: Change of rate EUR/USD](https://www.kaggle.com/code/chienngcong/analysis-of-eur-usd-trends-through-three-u-s-pres)
+3, Analysis of EUR/USD Trends Through Three U.S. Presidential Terms. [Project 3: Change of rate EUR/USD](https://www.kaggle.com/code/chienngcong/analysis-of-eur-usd-trends-through-three-u-s-pres)
 
 In this project, I analyzed the 30-day moving average (Mean(30)) of the EUR/USD exchange rate across three U.S. presidential terms (Bush, Obama, Trump) to identify long-term currency trends. The analysis showed a sharp euro appreciation during the Bush era, a strong dollar recovery under Obama, and relative stability during Trump’s term. This project highlights how macroeconomic and political cycles influence currency strength over time.
 
-4.  Cyclistic How to tranform the casual riders to manual riders . [Project 4: Cyclistic - case study in GDAPC](https://www.kaggle.com/code/chienngcong/cyclistic-gdapc)
+4,  Cyclistic How to tranform the casual riders to manual riders . [Project 4: Cyclistic - case study in GDAPC](https://www.kaggle.com/code/chienngcong/cyclistic-gdapc)
 
 As part of the Google Data Analytics Capstone, I analyzed user behavior for Cyclistic, a bike-share company in Chicago with over 5,800 bikes and 692 docking stations. The main objective was to investigate the behavioral differences between annual members and casual riders using historical trip data. By processing and visualizing usage patterns—including ride duration, start/end times, bike types, and rider types—I generated actionable insights for the marketing team.
 
 The goal was to support a data-driven strategy to convert more casual riders into annual members, increasing long-term revenue. I cleaned and explored data using R (tidyverse, dplyr, ggplot2), identified key trends, and helped shape marketing recommendations based on ride behavior. The analysis was presented to Cyclistic’s marketing director and key stakeholders to guide future promotional campaigns.
 
-5. Cyclistic User Behavior Dashboard
+5, Cyclistic User Behavior Dashboard
 Tools: BigQuery, SQL, Tableau, Excel | Project Type: BI & ETL Capstone
 
 As part of the Google Business Intelligence Capstone Project, I developed a full BI solution for Cyclistic, a New York-based bike-sharing company. The goal was to analyze user behavior across over 5 million trips to support data-driven station expansion planning.
