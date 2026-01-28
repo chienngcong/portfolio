@@ -60,6 +60,7 @@ Data-driven professional with hands-on experience in banking data analysis, IFRS
 
 ### 📊 Project
 1, [Project 1: Salifort Motors](https://www.kaggle.com/code/chienngcong/course-7-salifort-motors-project-lab)
+
 This project is part of the Google Advanced Data Analytics Professional Certificate. It focuses on analyzing employee survey data from Salifort Motors to understand the drivers of employee turnover and to predict attrition.
 
 The project applies an end-to-end analytics workflow, including data cleaning, exploratory data analysis (EDA), feature engineering, and the development of a classification model (regression or tree-based). Model performance is evaluated using standard metrics, and insights are translated into practical recommendations for improving employee retention.
